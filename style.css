@@ -1,5 +1,8 @@
+/***************************************************************************************************/
 /* This is the font family for the buttons */
 /* font-family: 'Inter', sans-serif; */
+
+/* Please ensure to use rem instead of px for measurement */
 
 *,
 *::before,
@@ -33,6 +36,7 @@ button {
 	border: none;
 	outline: none;
 	cursor: pointer;
+	background: none;
 }
 
 /* Center and stretch all images */
@@ -46,3 +50,47 @@ img {
 input {
 	font: inherit;
 }
+
+.btn_primary {
+	background-color: var(--color-primary);
+	padding: 1.2rem 1.6rem;
+	border-radius: 0.4rem;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+/***************************************************************************************************/
+
+/* Header */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2.05rem 8rem;
+}
+
+header ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+header a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 500;
+	font-size: 1.8rem;
+	transition: color 0.3s;
+}
+
+header a.active {
+	color: var(--color-primary);
+}
+
+header a:hover {
+	color: var(--color-primary);
+}
+
+/* Hero */
