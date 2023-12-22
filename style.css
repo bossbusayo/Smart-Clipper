@@ -264,3 +264,40 @@ header a:hover {
 	}
 }
 /* ******************************************************** */
+.features {
+	position: relative;
+	padding: 12rem 15rem 23rem;
+	margin-bottom: 13.2rem;
+}
+
+.features-heading {
+	text-transform: uppercase;
+	font-size: 3.6rem;
+	text-align: center;
+	margin-bottom: 10rem;
+}
+.features-general {
+	/* display: flex; */
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 4rem;
+}
+
+.features-icon {
+	width: 4.8rem;
+	height: 4.8rem;
+}
+
+/* .features-img {
+	width: 23rem;
+	height: 23rem;
+} */
+
+.features-side {
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.features-content-text {
+	margin-bottom: 12.8rem;
+}
