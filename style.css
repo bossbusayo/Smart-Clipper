@@ -267,7 +267,7 @@ header a:hover {
 .features {
 	position: relative;
 	padding: 12rem 15rem 23rem;
-	margin-bottom: 13.2rem;
+	margin-bottom: 10.2rem;
 }
 
 .features-heading {
@@ -288,16 +288,39 @@ header a:hover {
 	height: 4.8rem;
 }
 
-/* .features-img {
-	width: 23rem;
-	height: 23rem;
-} */
+.features-img {
+	/* width: 40rem;
+	height: 40rem; */
+}
 
 .features-side {
 	display: flex;
 	margin-bottom: 1rem;
+	align-items: center;
+	gap: 1rem;
 }
 
 .features-content-text {
 	margin-bottom: 12.8rem;
 }
+
+.hair-types {
+	position: relative;
+	margin-bottom: 13.2rem;
+	display: flex;
+}
+
+.hair-types-img {
+	/* background-image: url(./img/haircut.png); */
+	flex: 1;
+	height: 100rem;
+}
+
+.hair-types-text {
+	flex: 1;
+	display: grid;
+	grid-template-rows: 2rem 2rem 2rem 4rem;
+	align-content: center;
+}
+
+/* linear-gradient(rgba(#c69936, 0.5), rgba(#c69936, 0.5)), */
