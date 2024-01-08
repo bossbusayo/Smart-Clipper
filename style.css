@@ -284,6 +284,8 @@ header a:hover {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 4rem;
+	place-items: center;
+	padding-bottom: 12.8rem;
 }
 
 .features-icon {
@@ -297,8 +299,8 @@ header a:hover {
 }
 
 .features-2 {
-	width: 54.1rem;
-	height: 44.8rem;
+	max-width: 54.1rem;
+	max-height: 44.8rem;
 }
 
 .features-side {
@@ -308,23 +310,25 @@ header a:hover {
 	gap: 1rem;
 }
 
-.features-content-text {
+/* .features-content-text {
 	margin-bottom: 12.8rem;
+} */
+
+.features-1,
+.features-3 {
+	display: flex;
+	flex-direction: column;
+	gap: 12.8rem;
 }
 
 /* Media querries. Create as needed or use existing */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 900px) {
 	.features-general {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 4rem;
 	}
-	.features-img {
-		/* display: none; */
-	}
-}
 
-@media only screen and (max-width: 900px) {
 	.features {
 		position: relative;
 		padding: 2rem 5rem;
@@ -332,6 +336,11 @@ header a:hover {
 
 	.features-2 {
 		display: none;
+	}
+
+	.features-1,
+	.features-3 {
+		gap: 6rem;
 	}
 }
 
@@ -344,11 +353,7 @@ header a:hover {
 	.features-general {
 		display: flex;
 		flex-direction: column;
-		gap: 0.2rem;
-	}
-
-	.features-content-text {
-		margin-bottom: 6rem;
+		gap: 6rem;
 	}
 }
 
@@ -369,8 +374,9 @@ header a:hover {
 		font-size: 1.75rem;
 	}
 
-	.features-content-text {
-		margin-bottom: 4rem;
+	.features-1,
+	.features-3 {
+		gap: 4rem;
 	}
 
 	.features-icon {
